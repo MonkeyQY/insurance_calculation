@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "smit"
+version = "0.1.0"
+description = "SMIT test task"
+authors = ["artemowkin <artyom.groshev2017@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0"
+tortoise-orm = {extras = ["asyncpg"], version = "^0.19.3"}
+uvicorn = "^0.22.0"
+pydantic-settings = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
