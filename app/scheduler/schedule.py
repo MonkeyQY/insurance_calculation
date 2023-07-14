@@ -1,11 +1,10 @@
 from apscheduler.jobstores.sqlalchemy import SQLAlchemyJobStore
-
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from sqlalchemy.engine import URL
 
 from app import config
 from app.database import engine
-from app.insurance.getting_current_tariffs import get_current_tariffs, current_tariffs
+from app.insurance.getting_current_tariffs import current_tariffs
 
 schedule = AsyncIOScheduler(
     job_defaults={
