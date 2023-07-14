@@ -1,8 +1,10 @@
 aiohttp==3.8.4
 aiosignal==1.3.1
 aiosqlite==0.17.0
+alembic==1.11.1
 annotated-types==0.5.0
 anyio==3.7.1
+APScheduler==3.10.1
 async-timeout==4.0.2
 asyncpg==0.28.0
 attrs==23.1.0
@@ -15,6 +17,7 @@ charset-normalizer==3.2.0
 cleo==2.0.1
 click==8.1.5
 crashtest==0.4.1
+databases==0.7.0
 distlib==0.3.6
 dulwich==0.21.5
 fastapi==0.100.0
@@ -34,6 +37,8 @@ jsonschema==4.18.3
 jsonschema-specifications==2023.6.1
 keyring==23.13.1
 lockfile==0.12.2
+Mako==1.2.4
+MarkupSafe==2.1.3
 mccabe==0.7.0
 more-itertools==9.1.0
 msgpack==1.0.5
@@ -49,6 +54,7 @@ pluggy==1.2.0
 poetry==1.5.1
 poetry-core==1.6.1
 poetry-plugin-export==1.4.0
+psycopg2-binary==2.9.6
 ptyprocess==0.7.0
 pycodestyle==2.10.0
 pycparser==2.21
@@ -70,12 +76,13 @@ rpds-py==0.8.10
 shellingham==1.5.0.post1
 six==1.16.0
 sniffio==1.3.0
-SQLAlchemy~=1.4.49
+SQLAlchemy==1.4.49
 starlette==0.27.0
 tomlkit==0.11.8
 tortoise-orm==0.19.3
 trove-classifiers==2023.7.6
 typing_extensions==4.7.1
+tzlocal==5.0.1
 urllib3==1.26.16
 uvicorn==0.22.0
 virtualenv==20.23.1
@@ -83,7 +90,3 @@ webencodings==0.5.1
 xattr==0.10.1
 yarl==1.9.2
 zipp==3.16.1
-
-databases~=0.7.0
-alembic~=1.11.1
-APScheduler~=3.10.1
