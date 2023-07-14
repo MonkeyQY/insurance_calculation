@@ -5,7 +5,7 @@ from sqlalchemy.engine import URL
 
 from app import config
 from app.database import engine
-from app.insurance.getting_current_tariffs import get_current_tariffs
+from app.insurance.getting_current_tariffs import get_current_tariffs, current_tariffs
 
 schedule = AsyncIOScheduler(
     job_defaults={
@@ -22,7 +22,7 @@ scheduler_job_store = SQLAlchemyJobStore(
 schedule.add_jobstore(scheduler_job_store)
 
 schedule.add_job(
-    get_current_tariffs,
+    current_tariffs,
     trigger="cron",
     day_of_week="mon-sun",
     hour="20",
