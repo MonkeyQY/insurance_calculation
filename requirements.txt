@@ -59,7 +59,6 @@ ptyprocess==0.7.0
 pycodestyle==2.10.0
 pycparser==2.21
 pydantic==1.10.11
-pydantic-settings==2.0.1
 pydantic_core==2.1.2
 pyflakes==3.0.1
 pypika-tortoise==0.1.6
