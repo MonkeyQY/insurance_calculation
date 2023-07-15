@@ -1,5 +1,6 @@
 [![Black Formatting](https://github.com/MonkeyQY/insurance_calculation/actions/workflows/black.yml/badge.svg)](https://github.com/MonkeyQY/insurance_calculation/actions/workflows/black.yml)
 [![Flake8 Linting](https://github.com/MonkeyQY/insurance_calculation/actions/workflows/flake8.yml/badge.svg)](https://github.com/MonkeyQY/insurance_calculation/actions/workflows/flake8.yml)
+[![Run pytest](https://github.com/MonkeyQY/insurance_calculation/actions/workflows/pytest.yml/badge.svg)](https://github.com/MonkeyQY/insurance_calculation/actions/workflows/pytest.yml)
 ## Предустановка
 
 Для успешного запуска приложения необходимо убедиться, что на вашей машине установлены следующие утилиты:
