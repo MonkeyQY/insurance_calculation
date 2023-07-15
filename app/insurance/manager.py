@@ -62,6 +62,11 @@ class InsuranceManager:
         await self.database.execute(query=query)
         return
 
+    async def __delete_all(self):
+        query = insurance.delete()
+        await self.database.execute(query=query)
+        return
+
 
 def get_insurance_manager() -> InsuranceManager:
     return InsuranceManager(database)
